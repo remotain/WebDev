@@ -65,7 +65,7 @@ router.get("/:comment_id/edit", middleware.checkCommentOwnership, (req, res) => 
 //UPDATE
 router.put("/:comment_id", middleware.checkCommentOwnership, (req, res) => {
     Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, (err, update) =>{
-        if(err || !found ){
+        if(err || !update ){
             console.log(err);
             req.flash("error", "Comment not found");
             res.redirect("back");
