@@ -1,0 +1,9 @@
+.landing-image {
+    background-image: url('imgs/background.jpg') !important;
+    background-size: cover !important;
+    min-height: 20vh !important;
+}
+
+.container.main {
+    margin-top: 2em;
+}
