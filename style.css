@@ -1,5 +1,5 @@
 .landing-image {
-    background-image: url('imgs/background.jpg') !important;
+    /* background-image: url('imgs/background.jpg') !important; */
     background-size: cover !important;
     min-height: 20vh !important;
 }
