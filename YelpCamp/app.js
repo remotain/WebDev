@@ -28,6 +28,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 // Connect to mongo db
 var dbString = process.env.DBSTRING || "mongodb://localhost/yelp_camp";
+console.log("Connect to MongoDB: " + dbString );
 mongoose.connect(dbString);
 
 //seedDB(); // Seed the database
@@ -61,5 +62,5 @@ var port = process.env.PORT || 3000;
 var ip = process.env.IP || "localhost";
 
 app.listen(port, () =>{
-    console.log("Listening on: " + port );
+    console.log("Listening on port: " + port );
 });
