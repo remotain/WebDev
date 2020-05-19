@@ -60,6 +60,6 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 var port = process.env.PORT || 3000;
 var ip = process.env.IP || "localhost";
 
-app.listen(port, ip, () =>{
-    console.log("Listening on: " + ip + ":" + port );
+app.listen(port, () =>{
+    console.log("Listening on: " + port );
 });
