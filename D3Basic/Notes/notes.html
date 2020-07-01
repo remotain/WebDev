@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="notes.css">
+    <title>D3 Basic</title>
+</head>
+<body>
+    
+    <h1 class="text-center">My notes</h1>
+
+    <div class="container col-sm-8">
+
+        <div class="column" id="notes">
+            <p class="alert alert-primary note">First note of the list</p>
+            <p class="alert alert-primary note">Second note of the list</p>
+            <p class="alert alert-primary note">Third note of the list</p>
+        </div>
+
+        <div class="column">
+            <p class="alert alert-success d-none preview"></p>
+        </div>
+        
+        <form id="new-note">
+            <div class="form-row">   
+                <div class="col">
+                    <input class="form-control" type="text" required> 
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary add">Add Note</button>
+                    <button class="btn btn-danger removeAll">Remove all</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="notes.js"></script>
+</body>
+</html>
